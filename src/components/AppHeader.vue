@@ -53,15 +53,19 @@ ul {
     height: 100%;
     display: flex;
     align-items: center;
-    border-bottom: 5px solid white;
+    border: 5px solid white;
 
     &:hover {
       border-bottom: 5px solid #0c7cec;
     }
+    
+    &:hover a {
+      color: #0c7cec;
+    }
 
     a {
+      color: black;
       text-decoration: none;
-      color: #0c7cec;
       text-transform: uppercase;
 
 
