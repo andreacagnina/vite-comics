@@ -6,8 +6,26 @@ export default {
 
 <template>
   <main>
+    <section>
+      -->Content goes here<-- </section>
+        <section>
 
+        </section>
   </main>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+main {
+  section {
+    background-color: black;
+    padding: 50px;
+    color: white;
+
+    &:nth-child(2) {
+      background-color: #0282f9;
+    }
+  }
+
+
+}
+</style>

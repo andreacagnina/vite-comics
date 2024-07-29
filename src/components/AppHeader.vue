@@ -11,7 +11,7 @@ export default {
         <div class="col-2">
         </div>
         <div class="col-12">
-          <div class="d-flex justify-content-between align-items-baseline">
+          <div class="d-flex justify-content-between align-items-stretch">
             <div class="content bg-warning">
               <a href="#">
                 <img src="../assets/dc-logo.png" alt="">
@@ -19,7 +19,7 @@ export default {
             </div>
 
             <div class="content bg-danger d-flex align-item-center">
-              <ul class="list-unstyled d-flex">
+              <ul class="list-unstyled d-flex my-0">
                 <li><a href="">1</a></li>
                 <li><a href="">2</a></li>
                 <li><a href="">3</a></li>
@@ -42,12 +42,13 @@ export default {
 <style lang="scss" scoped>
 header {
   background-color: white;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 
 ul {
   li {
-    padding: 30px 30px;
+    padding: 30px;
+    border: 5px solid lightblue;
 
 
 
