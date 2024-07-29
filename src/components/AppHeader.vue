@@ -1,5 +1,51 @@
 <script>
 export default {
+data(){
+  return{
+    links: [
+      {
+      label: 'characters',
+      url: '#',
+    },
+      {
+      label: 'comics',
+      url: '#',
+    },
+      {
+      label: 'movie',
+      url: '#',
+    },
+      {
+      label: 'tv',
+      url: '#',
+    },
+      {
+      label: 'games',
+      url: '#',
+    },
+      {
+      label: 'collectibles',
+      url: '#',
+    },
+      {
+      label: 'videos',
+      url: '#',
+    },
+      {
+      label: 'fans',
+      url: '#',
+    },
+      {
+      label: 'news',
+      url: '#',
+    },
+      {
+      label: 'shop',
+      url: '#',
+    },
+    ]
+  }
+}
 
 }
 </script>
@@ -18,16 +64,8 @@ export default {
 
             <div class="content d-flex align-item-center">
               <ul class="list-unstyled d-flex my-0">
-                <li><a class="fw-bold" href="">characters</a></li>
-                <li><a class="fw-bold" href="">comics</a></li>
-                <li><a class="fw-bold" href="">movies</a></li>
-                <li><a class="fw-bold" href="">tv</a></li>
-                <li><a class="fw-bold" href="">games</a></li>
-                <li><a class="fw-bold" href="">collectibles</a></li>
-                <li><a class="fw-bold" href="">videos</a></li>
-                <li><a class="fw-bold" href="">fans</a></li>
-                <li><a class="fw-bold" href="">news</a></li>
-                <li><a class="fw-bold" href="">shop</a></li>
+                <li v-for="(label, index) in links" :key="index"><a class="fw-bold" :href="label.url">{{label.label}}</a></li>
+
               </ul>
             </div>
           </div>
@@ -40,7 +78,6 @@ export default {
 <style lang="scss" scoped>
 header {
   background-color: white;
-
 
   img {
     border: 5px solid white;
@@ -56,7 +93,7 @@ ul {
     border: 5px solid white;
 
     &:hover {
-      border-bottom: 5px solid #0c7cec;
+      border-bottom-color: #0c7cec;
     }
     
     &:hover a {

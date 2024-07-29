@@ -23,6 +23,8 @@ main {
 
     &:nth-child(2) {
       background-color: #0282f9;
+      position: relative;
+      z-index: 1;
     }
   }
 

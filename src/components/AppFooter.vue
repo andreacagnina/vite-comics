@@ -1,5 +1,26 @@
 <script>
 export default {
+  data(){
+    return{
+      faIcons: [
+        {
+          url: '/src/assets/footer-facebook.png',
+        },
+        {
+          url: '/src/assets/footer-twitter.png',
+        },
+        {
+          url: '/src/assets/footer-youtube.png',
+        },
+        {
+          url: '/src/assets/footer-pinterest.png',
+        },
+        {
+          url: '/src/assets/footer-periscope.png',
+        },
+      ]
+    }
+  }
 
 }
 </script>
@@ -140,11 +161,7 @@ export default {
               <div class="content d-flex align-item-center">
                 <ul class="list-unstyled d-flex align-items-center my-0">
                   <li><a class="text-primary fw-bold" href="">FOLLOW US</a></li>
-                  <li><a href=""><img src="/src/assets/footer-facebook.png" alt=""></a></li>
-                  <li><a href=""><img src="/src/assets/footer-twitter.png" alt=""></a></li>
-                  <li><a href=""><img src="/src/assets/footer-youtube.png" alt=""></a></li>
-                  <li><a href=""><img src="/src/assets/footer-pinterest.png" alt=""></a></li>
-                  <li><a href=""><img src="/src/assets/footer-periscope.png" alt=""></a></li>
+                  <li v-for="(icon, index) in faIcons" :key="index"><a href=""><img :src="icon.url" alt=""></a></li>
                 </ul>
               </div>
             </div>
@@ -180,11 +197,14 @@ footer {
   background-image: url(/src/assets/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 500px;
 
 }
 
 .bottom-footer {
   background-color: #303030;
+  position: relative;
+  z-index: 1;
 
   li {
     padding: 20px 15px;
