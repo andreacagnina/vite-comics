@@ -9,25 +9,25 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="d-flex justify-content-between align-items-stretch">
-            <div class="content bg-warning">
+          <div class="d-flex justify-content-between">
+            <div class="content">
               <a href="#">
                 <img src="../assets/dc-logo.png" alt="">
               </a>
             </div>
 
-            <div class="content bg-danger d-flex align-item-center">
+            <div class="content d-flex align-item-center">
               <ul class="list-unstyled d-flex my-0">
-                <li><a href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
-                <li><a href="">6</a></li>
-                <li><a href="">7</a></li>
-                <li><a href="">8</a></li>
-                <li><a href="">9</a></li>
-                <li><a href="">10</a></li>
+                <li><a class="fw-bold" href="">characters</a></li>
+                <li><a class="fw-bold" href="">comics</a></li>
+                <li><a class="fw-bold" href="">movies</a></li>
+                <li><a class="fw-bold" href="">tv</a></li>
+                <li><a class="fw-bold" href="">games</a></li>
+                <li><a class="fw-bold" href="">collectibles</a></li>
+                <li><a class="fw-bold" href="">videos</a></li>
+                <li><a class="fw-bold" href="">fans</a></li>
+                <li><a class="fw-bold" href="">news</a></li>
+                <li><a class="fw-bold" href="">shop</a></li>
               </ul>
             </div>
           </div>
@@ -40,19 +40,31 @@ export default {
 <style lang="scss" scoped>
 header {
   background-color: white;
-  padding: 20px 20px 0 20px;
+
+
+  img {
+    border-bottom: 5px solid white;
+  }
 }
 
 ul {
   li {
-    padding: 30px;
-    border: 5px solid lightblue;
+    padding: 30px 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid white;
 
-
+    &:hover {
+      border-bottom: 5px solid #0c7cec;
+    }
 
     a {
       text-decoration: none;
-      color: black;
+      color: #0c7cec;
+      text-transform: uppercase;
+
+
     }
   }
 }
