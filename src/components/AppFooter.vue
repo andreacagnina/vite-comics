@@ -18,7 +18,149 @@ export default {
         {
           url: '/src/assets/footer-periscope.png',
         },
+      ],
+
+      DcComics: [
+        {
+          label: 'Characters',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Comics',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Movies',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'TV',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Games',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Videos',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'News',
+          url: '',
+          current: false,
+        },
+
+      ],
+      shop: [
+        {
+          label: 'Shop DC',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Shop DC Collectibles',
+          url: '',
+          current: false,
+        },
+      ],
+      Dc: [
+        {
+          label: 'Terms Of Use',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Privacy policy(New)',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Add Choices',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Advertising',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Jobs',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Subscriptions',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Talent Workshops',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'CPSC Certificates',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Ratings',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Shop Help',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'Contact Us',
+          url: '',
+          current: false,
+        },
+        
+      ],
+      sites:[
+        {
+          label: 'Characters',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'DC',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'MAD Magazine',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'DC Kids',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'DC Universe',
+          url: '',
+          current: false,
+        },
+        {
+          label: 'DC Power Visa',
+          url: '',
+          current: false,
+        },
       ]
+
     }
   }
 
@@ -39,26 +181,7 @@ export default {
                     dc comics
                   </h4>
                   <ul class="list-unstyled my-4">
-                    <li>
-                      Characters
-                    </li>
-                    <li>
-                      Comics
-                    </li>
-                    <li>
-                      Movies
-                    </li>
-                    <li>
-                      TV
-                    </li>
-                    <li>
-                      Games
-                    </li>
-                    <li>
-                      Videos
-                    </li>
-                    <li>
-                      News
+                    <li v-for="(label, index) in DcComics" :key="index"><a :href="label.url"> {{label.label}}</a>
                     </li>
                   </ul>
 
@@ -66,8 +189,8 @@ export default {
                     shop
                   </h4>
                   <ul class="list-unstyled my-4">
-                    <li>Shop DC</li>
-                    <li>Shop DC Collectibles</li>
+                    <li v-for="(label, index) in shop" :key="index"><a :href="label.url">{{label.label}}</a></li>
+                
                   </ul>
                 </div>
               </div>
@@ -75,39 +198,7 @@ export default {
                 <div class="content">
                   <h4>dc</h4>
                   <ul class="list-unstyled my-4">
-                    <li>
-                      Terms Of Use
-                    </li>
-                    <li>
-                      Privacy policy(New)
-                    </li>
-                    <li>
-                      Add Choices
-                    </li>
-                    <li>
-                      Advertising
-                    </li>
-                    <li>
-                      Jobs
-                    </li>
-                    <li>
-                      Subscriptions
-                    </li>
-                    <li>
-                      Talent Workshops
-                    </li>
-                    <li>
-                      CPSC Certificates
-                    </li>
-                    <li>
-                      Ratings
-                    </li>
-                    <li>
-                      Shop Help
-                    </li>
-                    <li>
-                      Contact Us
-                    </li>
+                    <li v-for="(label, index) in Dc" :key="index"><a :href="label.url">{{label.label}}</a></li>
                   </ul>
                 </div>
               </div>
@@ -115,24 +206,7 @@ export default {
                 <div class="content">
                   <h4>sites</h4>
                   <ul class="list-unstyled my-4">
-                    <li>
-                      Characters
-                    </li>
-                    <li>
-                      DC
-                    </li>
-                    <li>
-                      MAD Magazine
-                    </li>
-                    <li>
-                      DC Kids
-                    </li>
-                    <li>
-                      DC Universe
-                    </li>
-                    <li>
-                      DC Power Visa
-                    </li>
+                    <li v-for="(label, index) in sites" :key="index"><a :href="label.url">{{label.label}}</a></li>
                   </ul>
                 </div>
               </div>
@@ -181,15 +255,15 @@ footer {
     text-transform: uppercase;
   }
 
-  li {
-    color: gray
-  }
 
   a {
     text-decoration: none;
-    color: black;
+    color: gray;
+    
+    &:hover {
+      color: white
+    }
   }
-
 
 }
 
