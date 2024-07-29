@@ -6,9 +6,9 @@ export default {
 
 <template>
   <header>
-    <i class="fa-solid fa-check"></i>
+    <i class="fas fa-envelope"></i>
     <h1 class="text-center">
-      1 a A s S C
+      1
     </h1>
   </header>
 </template>

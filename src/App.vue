@@ -14,7 +14,6 @@ export default {
 </script>
 
 <template>
-  <i class="fa-solid fa-check"></i>
   <AppHeader />
   <AppMain />
   <AppFooter />
