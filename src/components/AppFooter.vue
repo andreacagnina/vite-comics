@@ -187,7 +187,7 @@ footer {
   background-color: #303030;
 
   li {
-    padding: 15px;
+    padding: 20px 15px;
   }
 }
 </style>

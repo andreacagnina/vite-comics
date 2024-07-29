@@ -43,7 +43,7 @@ header {
 
 
   img {
-    border-bottom: 5px solid white;
+    border: 5px solid white;
   }
 }
 
