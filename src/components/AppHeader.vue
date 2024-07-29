@@ -8,7 +8,7 @@ export default {
   <header>
     <i class="fa-solid fa-check"></i>
     <h1 class="text-center">
-      1
+      1 a A s S C
     </h1>
   </header>
 </template>
