@@ -1,7 +1,12 @@
 <script>
 import { icons } from '../data/Mmenu';
+import CardComics from './CardComics.vue';
+
 
 export default {
+  components:{
+    CardComics,
+  },
   data(){
     return{
   icons,
@@ -92,12 +97,8 @@ export default {
         <div class="row">
           <div class="col-12">
             <div class="row">
-              <div v-for="(comic, index) in comics" :key="index" class="col-2 content my-3">
-                <a href="">
-                  <img :src="comic.thumb" :alt="comic.series" class="w-100">
-                  <h6 class="mt-2">{{comic.series}}</h6>
-                </a>
-              </div>
+              <CardComics v-for="(comic, index) in comics" :key="`CardComics-${index}`" :Card="comic"/>
+              <!-- <div v-for="(comic, index) in comics" :key="index" class="col-2 content my-3"> <a href=""> <img :src="comic.thumb" :alt="comic.series" class="w-100"> <h6 class="mt-2">{{comic.series}}</h6> </a> </div> -->
             </div>
           </div>
         </div>
@@ -146,8 +147,6 @@ main {
       margin-right: 10px;
     }
   }
-  img {
-    aspect-ratio: 1/1;
-  }
+
   }
 </style>
