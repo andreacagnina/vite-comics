@@ -24,6 +24,7 @@ export default {
           url: '/src/assets/buy-dc-power-visa.svg',
         }
       ],
+
       comics:[
   {
     thumb: 'https://www.coverbrowser.com/image/action-comics/1-1.jpg',
@@ -56,43 +57,43 @@ export default {
     type: 'comic book'
   },
   {
-    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/5/50/Batman_Beyond_v.1_1.jpg/revision/latest?cb=20080809201655.jpg',
+    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/5/50/Batman_Beyond_v.1_1.jpg',
     price: '$2.99',
     series: 'Batman Beyond',
     type: 'comic book'
   },
   {
-    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/0/0d/Batman_Superman_Vol_1_1.jpg/revision/latest/scale-to-width-down/1200?cb=20130627211607.jpg',
+    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/0/0d/Batman_Superman_Vol_1_1.jpg',
     price: '$3.99',
     series: 'Batman/Superman',
     type: 'comic book'
   },
   {
-    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/c/cf/Batman_Superman_Annual_Vol_2_1.jpg/revision/latest?cb=20200929145132.jpg',
+    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/c/cf/Batman_Superman_Annual_Vol_2_1.jpg',
     price: '$4.99',
     series: 'Batman/Superman Annual',
     type: 'comic book'
   },
   {
-    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/5/54/Batman_The_Joker_War_Zone_Vol_1_1.jpg/revision/latest?cb=20200929124651.jpg',
+    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/5/54/Batman_The_Joker_War_Zone_Vol_1_1.jpg',
     price: '$5.99',
     series: 'Batman: The Joker War Zone',
     type: 'comic book'
   },
   {
-    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/6/64/Batman_Three_Jokers_Collected.jpg/revision/latest?cb=20201123054610.jpg',
+    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/6/64/Batman_Three_Jokers_Collected.jpg',
     price: '$6.99',
     series: 'Batman: Three Jokers',
     type: 'comic book'
   },
   {
-    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/f/f8/Batman_White_Knight_Presents_Harley_Quinn_Vol_1_1.jpg/revision/latest?cb=20201124094800.jpg',
+    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/f/f8/Batman_White_Knight_Presents_Harley_Quinn_Vol_1_1.jpg',
     price: '$4.99',
     series: 'Batman: White Knight Presents: Harley Quinn',
     type: 'comic book'
   },
   {
-    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/c/c8/Catwoman_Vol_2_1.jpg/revision/latest?cb=20160303223223.jpg',
+    thumb: 'https://static.wikia.nocookie.net/marvel_dc/images/c/c8/Catwoman_Vol_2_1.jpg',    
     price: '$16.99',
     series: 'Catwoman',
     type: 'graphic novel'
@@ -119,8 +120,8 @@ export default {
         </div>
       </div>
     </section>
-        <section>
-          <div class="container section-two">
+        <section class="section-two">
+          <div class="container">
             <div class="row">
               <div class="col-12">
                   <div class="content justify-content-between px-5">
@@ -149,13 +150,10 @@ main {
     padding: 60px;
 
 
-    &:nth-child(2) {
-      background-color: $brand_primary;
-    }
-
   }
-  
   .section-two{
+    background-color: $brand_primary;
+
     a {
       text-transform: uppercase;
     }
