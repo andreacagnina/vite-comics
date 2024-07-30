@@ -284,8 +284,15 @@ footer {
   li {
     padding: 20px 15px;
 
+    img:hover {
+      background-color: $brand_primary;
+      border-radius: 50%;
+    }
+
     a:first-child {
       color: $brand_primary
+
+
     }
   }
 }
