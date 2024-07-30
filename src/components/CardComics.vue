@@ -17,8 +17,12 @@ Card: Object
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/typographyColor' as *;
 img {
     aspect-ratio: 1/1;
+    &:hover {
+        border: 10px inset lighten($brand_primary, 30%);
+    }
 }
     
 </style>
