@@ -1,49 +1,9 @@
 <script>
+import { HeaderMenu } from '../data/Hmenu';
 export default {
 data(){
   return{
-    links: [
-      {
-      label: 'characters',
-      url: '#',
-    },
-      {
-      label: 'comics',
-      url: '#',
-    },
-      {
-      label: 'movie',
-      url: '#',
-    },
-      {
-      label: 'tv',
-      url: '#',
-    },
-      {
-      label: 'games',
-      url: '#',
-    },
-      {
-      label: 'collectibles',
-      url: '#',
-    },
-      {
-      label: 'videos',
-      url: '#',
-    },
-      {
-      label: 'fans',
-      url: '#',
-    },
-      {
-      label: 'news',
-      url: '#',
-    },
-      {
-      label: 'shop',
-      url: '#',
-    },
-    ]
+    HeaderMenu
   }
 }
 
@@ -64,8 +24,8 @@ data(){
             <div class="content d-flex align-item-center">
               <ul class="d-flex my-0">
                 <li
-                  v-for="(label, index) in links"
-                  :key="index"><a
+                  v-for="(label, index) in HeaderMenu"
+                  :key="`HM-${index}`"><a
                   class="fw-bold"
                   :href="label.url">{{label.label}}</a></li>
               </ul>

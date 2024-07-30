@@ -1,29 +1,10 @@
 <script>
+import { icons } from '../data/Mmenu';
+
 export default {
   data(){
     return{
-      icons: [
-        {
-          label: 'digital comics',
-          url: '/src/assets/buy-comics-digital-comics.png',
-        },
-        {
-          label: 'dc merchandise',
-          url: '/src/assets/buy-comics-merchandise.png',
-        },
-        {
-          label: 'subscription',
-          url: '/src/assets/buy-comics-subscriptions.png',
-        },
-        {
-          label: 'comic shop locator',
-          url: '/src/assets/buy-comics-shop-locator.png',
-        },
-        {
-          label: 'dc power visa',
-          url: '/src/assets/buy-dc-power-visa.svg',
-        }
-      ],
+  icons,
 
       comics:[
   {
@@ -158,11 +139,8 @@ main {
       text-transform: uppercase;
     }
   
-    li:last-child {
-      width: 25%;
-    }
     img {
-      width: 20%;
+      width: 40px;
       margin-right: 10px;
     }
   }
