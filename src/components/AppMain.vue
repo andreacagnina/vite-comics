@@ -37,7 +37,7 @@ export default {
           <div class="col-12"><div class="content"> -->Content goes here<-- </div></div>
         </div>
       </div>
-     </section>
+    </section>
         <section>
           <div class="container">
             <div class="row">
@@ -58,7 +58,7 @@ export default {
 main {
   section {
     background-color: black;
-    padding: 20px;
+    padding: 60px;
     color: white;
 
     &:nth-child(2) {

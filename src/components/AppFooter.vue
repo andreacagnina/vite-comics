@@ -263,7 +263,6 @@ footer {
 .bg-image-logo {
   background-image: url(/src/assets/dc-logo-bg.png);
   background-repeat: no-repeat;
-
   background-position: right;
 
 }
