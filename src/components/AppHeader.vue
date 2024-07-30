@@ -90,7 +90,8 @@ ul {
     height: 100%;
     display: flex;
     align-items: center;
-    border: 5px solid white;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
 
     &:hover {
       border-bottom-color: #0c7cec;

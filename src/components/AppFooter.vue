@@ -174,13 +174,13 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <div class="content d-flex p-5">
+            <div class="content d-flex py-5">
               <div class="col-4">
                 <div class="content">
                   <h4>
                     dc comics
                   </h4>
-                  <ul class="list-unstyled my-4">
+                  <ul class="list-unstyled my-3">
                     <li v-for="(label, index) in DcComics" :key="index"><a :href="label.url"> {{label.label}}</a>
                     </li>
                   </ul>
@@ -188,7 +188,7 @@ export default {
                   <h4>
                     shop
                   </h4>
-                  <ul class="list-unstyled my-4">
+                  <ul class="list-unstyled my-3">
                     <li v-for="(label, index) in shop" :key="index"><a :href="label.url">{{label.label}}</a></li>
                 
                   </ul>
@@ -197,7 +197,7 @@ export default {
               <div class="col-4">
                 <div class="content">
                   <h4>dc</h4>
-                  <ul class="list-unstyled my-4">
+                  <ul class="list-unstyled my-3">
                     <li v-for="(label, index) in Dc" :key="index"><a :href="label.url">{{label.label}}</a></li>
                   </ul>
                 </div>
@@ -205,7 +205,7 @@ export default {
               <div class="col-4">
                 <div class="content">
                   <h4>sites</h4>
-                  <ul class="list-unstyled my-4">
+                  <ul class="list-unstyled my-3">
                     <li v-for="(label, index) in sites" :key="index"><a :href="label.url">{{label.label}}</a></li>
                   </ul>
                 </div>
@@ -214,7 +214,7 @@ export default {
 
           </div>
           <div class="col-6">
-            <div class="content">
+            <div class="content bg-image-logo">
               <img src="/src/assets/dc-logo-bg.png" alt="">
             </div>
           </div>
@@ -223,7 +223,6 @@ export default {
     </div>
 
     <div class="bottom-footer">
-
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -255,7 +254,6 @@ footer {
     text-transform: uppercase;
   }
 
-
   a {
     text-decoration: none;
     color: gray;
@@ -271,14 +269,10 @@ footer {
   background-image: url(/src/assets/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
-
 }
 
 .bottom-footer {
   background-color: #303030;
-  position: relative;
-  z-index: 1;
 
   li {
     padding: 20px 15px;

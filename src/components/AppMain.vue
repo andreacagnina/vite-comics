@@ -4,18 +4,23 @@ export default {
     return{
       icons: [
         {
+          label: 'digital comics',
           url: '/src/assets/buy-comics-digital-comics.png',
         },
         {
+          label: 'dc merchandise',
           url: '/src/assets/buy-comics-merchandise.png',
         },
         {
+          label: 'subscription',
           url: '/src/assets/buy-comics-subscriptions.png',
         },
         {
+          label: 'comic shop locator',
           url: '/src/assets/buy-comics-shop-locator.png',
         },
         {
+          label: 'dc power visa',
           url: '/src/assets/buy-dc-power-visa.svg',
         }
       ]
@@ -27,14 +32,19 @@ export default {
 <template>
   <main>
     <section>
-      -->Content goes here<-- </section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12"><div class="content"> -->Content goes here<-- </div></div>
+        </div>
+      </div>
+     </section>
         <section>
           <div class="container">
             <div class="row">
               <div class="col-12">
                   <div class="content justify-content-between px-5">
-                    <ul class="list-unstyled d-flex  align-items-center my-0 justify-content-around text-center">
-                      <li v-for="(icon, index) in icons" :key="index"><a href=""><img :src="icon.url" alt=""></a></li>
+                    <ul class="list-unstyled d-flex  align-items-center my-0 justify-content-around text-center text-nowrap">
+                      <li class="d-flex" v-for="(icon, index) in icons" :key="index"><a href=""><img :src="icon.url" alt="">{{icon.label}}</a></li>
                     </ul>
                   </div>
               </div>
@@ -48,19 +58,34 @@ export default {
 main {
   section {
     background-color: black;
-    padding: 50px;
+    padding: 20px;
     color: white;
 
     &:nth-child(2) {
       background-color: #0282f9;
-      position: relative;
-      z-index: 1;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    li:nth-child(4){
+      width: 15%;
+    }
+
+    li:last-child {
+      width: 25%;
     }
   }
 
   img {
-    width: 40%;
+    width: 20%;
+    margin-right: 10px
   };
+
+
 
 
 }
