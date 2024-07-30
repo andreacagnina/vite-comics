@@ -223,12 +223,12 @@ export default {
           <div class="col-12">
             <div class="d-flex justify-content-between align-items-center">
               <div class="content">
-                <button type="button" class="btn btn-outline-primary">SIGN-UP-NOW!</button>
+                <button type="button" class="butn">SIGN-UP-NOW!</button>
               </div>
 
               <div class="content d-flex align-item-center">
                 <ul class="list-unstyled d-flex align-items-center my-0">
-                  <li><a class="text-primary fw-bold" href="">FOLLOW US</a></li>
+                  <li><a class="fw-bold" href="">FOLLOW US</a></li>
                   <li v-for="(icon, index) in faIcons" :key="index"><a href=""><img :src="icon.url" alt=""></a></li>
                 </ul>
               </div>
@@ -242,6 +242,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/typographyColor' as *;
 footer {
   color: white;
 
@@ -256,6 +257,8 @@ footer {
     &:hover {
       color: white
     }
+
+
   }
 
 }
@@ -280,6 +283,21 @@ footer {
 
   li {
     padding: 20px 15px;
+
+    a:first-child {
+      color: $brand_primary
+    }
+  }
+}
+
+.butn {
+  border: 1px solid $brand_primary;
+  color: white;
+  padding: 7px 10px;
+  background-color: #303030;
+
+  &:hover {
+    background-color: $brand_primary;
   }
 }
 </style>

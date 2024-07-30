@@ -55,6 +55,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/typographyColor' as *;
 main {
   section {
     background-color: black;
@@ -62,7 +63,7 @@ main {
     color: white;
 
     &:nth-child(2) {
-      background-color: #0282f9;
+      background-color: $brand_primary;
     }
 
     a {

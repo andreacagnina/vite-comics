@@ -76,6 +76,7 @@ data(){
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/typographyColor' as *;
 header {
   background-color: white;
 
@@ -94,11 +95,11 @@ ul {
     border-bottom: 5px solid white;
 
     &:hover {
-      border-bottom-color: #0c7cec;
+      border-bottom-color: $brand_primary;
     }
     
     &:hover a {
-      color: #0c7cec;
+      color: $brand_primary;
     }
 
     a {
