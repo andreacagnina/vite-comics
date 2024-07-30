@@ -43,8 +43,14 @@ export default {
             <div class="row">
               <div class="col-12">
                   <div class="content justify-content-between px-5">
-                    <ul class="list-unstyled d-flex  align-items-center my-0 justify-content-around text-center text-nowrap">
-                      <li class="d-flex" v-for="(icon, index) in icons" :key="index"><a href=""><img :src="icon.url" alt="">{{icon.label}}</a></li>
+                    <ul class="d-flex  align-items-center my-0 justify-content-around text-center text-nowrap">
+                    <li
+                        class="d-flex"
+                        v-for="(icon, index) in icons"
+                        :key="index"><a
+                        href=""><img
+                        :src="icon.url"
+                        alt="">{{icon.label}}</a></li>
                     </ul>
                   </div>
               </div>
@@ -60,15 +66,13 @@ main {
   section {
     background-color: black;
     padding: 60px;
-    color: white;
+
 
     &:nth-child(2) {
       background-color: $brand_primary;
     }
 
     a {
-      color: white;
-      text-decoration: none;
       text-transform: uppercase;
     }
 
@@ -85,9 +89,6 @@ main {
     width: 20%;
     margin-right: 10px
   };
-
-
-
 
 }
 </style>

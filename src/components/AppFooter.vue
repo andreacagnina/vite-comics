@@ -180,33 +180,45 @@ export default {
                   <h4>
                     dc comics
                   </h4>
-                  <ul class="list-unstyled my-3">
-                    <li v-for="(label, index) in DcComics" :key="index"><a :href="label.url"> {{label.label}}</a>
+                  <ul class="my-3">
+                    <li
+                    v-for="(label, index) in DcComics"
+                    :key="index"><a
+                    :href="label.url">
+                    {{label.label}}</a>
                     </li>
                   </ul>
 
                   <h4>
                     shop
                   </h4>
-                  <ul class="list-unstyled my-3">
-                    <li v-for="(label, index) in shop" :key="index"><a :href="label.url">{{label.label}}</a></li>
-                
+                  <ul class="my-3">
+                    <li
+                      v-for="(label, index) in shop"
+                      :key="index"><a
+                      :href="label.url">{{label.label}}</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-2">
                 <div class="content">
                   <h4>dc</h4>
-                  <ul class="list-unstyled my-3">
-                    <li v-for="(label, index) in Dc" :key="index"><a :href="label.url">{{label.label}}</a></li>
+                  <ul class="my-3">
+                    <li
+                      v-for="(label, index) in Dc"
+                      :key="index"><a
+                      :href="label.url">{{label.label}}</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-2">
                 <div class="content">
                   <h4>sites</h4>
-                  <ul class="list-unstyled my-3">
-                    <li v-for="(label, index) in sites" :key="index"><a :href="label.url">{{label.label}}</a></li>
+                  <ul class="my-3">
+                    <li
+                      v-for="(label, index) in sites"
+                      :key="index"><a
+                      :href="label.url">{{label.label}}</a></li>
                   </ul>
                 </div>
               </div>
@@ -227,9 +239,14 @@ export default {
               </div>
 
               <div class="content d-flex align-item-center">
-                <ul class="list-unstyled d-flex align-items-center my-0">
+                <ul class="d-flex align-items-center my-0">
                   <li><a class="fw-bold" href="">FOLLOW US</a></li>
-                  <li v-for="(icon, index) in faIcons" :key="index"><a href=""><img :src="icon.url" alt=""></a></li>
+                  <li
+                    v-for="(icon, index) in faIcons"
+                    :key="index"><a
+                    href=""><img
+                    :src="icon.url"
+                    alt=""></a></li>
                 </ul>
               </div>
             </div>
@@ -244,23 +261,17 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/typographyColor' as *;
 footer {
-  color: white;
-
   h4 {
     text-transform: uppercase;
   }
 
   a {
-    text-decoration: none;
     color: gray;
     
     &:hover {
       color: white
     }
-
-
   }
-
 }
 
 .bg-image-logo {
@@ -284,15 +295,12 @@ footer {
   li {
     padding: 20px 15px;
 
+    a:first-child {
+      color: $brand_primary
+    }
     img:hover {
       background-color: $brand_primary;
       border-radius: 50%;
-    }
-
-    a:first-child {
-      color: $brand_primary
-
-
     }
   }
 }

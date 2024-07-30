@@ -61,11 +61,13 @@ data(){
                 <img src="../assets/dc-logo.png" alt="">
               </a>
             </div>
-
             <div class="content d-flex align-item-center">
-              <ul class="list-unstyled d-flex my-0">
-                <li v-for="(label, index) in links" :key="index"><a class="fw-bold" :href="label.url">{{label.label}}</a></li>
-
+              <ul class="d-flex my-0">
+                <li
+                  v-for="(label, index) in links"
+                  :key="index"><a
+                  class="fw-bold"
+                  :href="label.url">{{label.label}}</a></li>
               </ul>
             </div>
           </div>
@@ -78,8 +80,6 @@ data(){
 <style lang="scss" scoped>
 @use '../styles/partials/typographyColor' as *;
 header {
-  background-color: white;
-
   img {
     border: 5px solid white;
   }
@@ -87,10 +87,10 @@ header {
 
 ul {
   li {
-    padding: 30px 15px;
-    height: 100%;
     display: flex;
     align-items: center;
+    padding: 30px 15px;
+    height: 100%;
     border-top: 5px solid white;
     border-bottom: 5px solid white;
 
@@ -104,10 +104,7 @@ ul {
 
     a {
       color: black;
-      text-decoration: none;
       text-transform: uppercase;
-
-
     }
   }
 }
