@@ -93,8 +93,10 @@ export default {
           <div class="col-12">
             <div class="row">
               <div v-for="(comic, index) in comics" :key="index" class="col-2 content my-3">
-                <img :src="comic.thumb" :alt="comic.series" class="w-100">
-                <h6 class="mt-2">{{comic.series}}</h6>
+                <a href="">
+                  <img :src="comic.thumb" :alt="comic.series" class="w-100">
+                  <h6 class="mt-2">{{comic.series}}</h6>
+                </a>
               </div>
             </div>
           </div>
@@ -110,7 +112,7 @@ export default {
                     <li
                         class="d-flex"
                         v-for="(icon, index) in icons"
-                        :key="index"><a
+                        :key="`icon-${index}`"><a
                         href=""><img
                         :src="icon.url"
                         alt="">{{icon.label}}</a></li>
