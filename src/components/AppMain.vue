@@ -2,16 +2,19 @@
 import { icons } from '../data/Mmenu';
 import { comicsCard } from '../data/cardMmenu';
 import CardComics from './CardComics.vue';
+import Jumbotron from './Jumbotron.vue';
+
 
 
 export default {
   components:{
     CardComics,
+    Jumbotron
   },
   data(){
     return{
   icons,
-  comicsCard
+  comicsCard,
     }
 }
 }
@@ -19,12 +22,21 @@ export default {
 
 <template>
   <main>
+<div class="jumbotron">
+  <Jumbotron/>
+  <Button class="button abs">CURRENT SERIES</Button>
+</div>
     <section>
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="row">
               <CardComics v-for="(comic, index) in comicsCard" :key="`CardComics-${index}`" :Card="comic"/>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="content text-center">
+              <button class="button">Load more</button>
             </div>
           </div>
         </div>
@@ -46,6 +58,7 @@ export default {
                     </ul>
                   </div>
               </div>
+              
             </div>
           </div>
         </section>
@@ -55,10 +68,26 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/typographyColor' as *;
 main {
+  .jumbotron {
+    position: relative;
+
+    .abs {
+      position: absolute;
+      bottom: -17px;
+      left: 15%;
+          }
+        }
+        
+        .button {
+          background-color: $brand_primary;
+          color: white;
+          border: none;
+          padding: 5px 25px;
+          text-transform: uppercase;
+        }
   section {
     background-color: black;
-    padding: 60px;
-
+    padding: 20px;
 
   }
   .section-two{
